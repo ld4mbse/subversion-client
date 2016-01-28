@@ -77,16 +77,16 @@ public class SubversionClient {
 	
 	
 	public static void main(String[] args) {
-		connectWithRepo();
+		connectWithRepo("username", "password");
 		System.exit(0);
 	}
 	
-	public static ArrayList<FileMetadata> connectWithRepo() {
+	public static ArrayList<FileMetadata> connectWithRepo(String svnUserName, String svnPassword) {
 		ArrayList<FileMetadata> fileMetadatas = new ArrayList<FileMetadata>();
 		try {
 			 UserLoginInfo userLoginInfo = new UserLoginInfo();
-			 userLoginInfo.setUsername("axelr");
-			 userLoginInfo.setPassword("Guepards2015");
+			 userLoginInfo.setUsername(svnUserName);
+			 userLoginInfo.setPassword(svnPassword);
 			setUpSVNClient(userLoginInfo);
 			 setUpConnectionToRepo(userLoginInfo, repositoryurl);
 			 repository.testConnection();
@@ -310,10 +310,10 @@ public class SubversionClient {
 
 	}
 
-	public static ArrayList<FileMetadata> syncWorkingCopy(String repositoryurl2, String workingCopyPath2) {
+	public static ArrayList<FileMetadata> syncWorkingCopy(String repositoryurl2, String workingCopyPath2, String svnUserName, String svnPassword) {
 		repositoryurl = repositoryurl2;
 		workingCopyPath = workingCopyPath2;
-		return connectWithRepo();
+		return connectWithRepo(svnUserName, svnPassword);
 
 	}
 
