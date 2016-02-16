@@ -1,6 +1,12 @@
 # subversion-client
 ##Java-based implementation of subversion client
 
+<p align="center">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Subversion-logo-cropped.png"/>
+</p>
+
+
+
 ###Instructions to install and run the subversion-client 
 
 Last updated by Axel Reichwein (axel.reichwein@koneksys.com) February 15, 2016
