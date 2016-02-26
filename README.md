@@ -6,6 +6,8 @@
 </p>
 
 
+###Instructions to set up a Subversion server 
+[Instructions](https://github.com/ld4mbse/subversion-client/blob/master/edu.gatech.mbsec.subversion.client/Documentation%20to%20set%20up%20svn%20server/Instructions%20to%20set%20up%20Subversion%20server%20-Jan28-2016.pdf)
 
 ###Instructions to install and run the subversion-client 
 
